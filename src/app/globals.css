@@ -12,6 +12,18 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme{
+  --animate-rotate: rotate 1s infinite linear;
+  @keyframes rotate{
+    0%{
+      background-image: linearGradient(from 0deg,lightblue,lightskyblue,lightcyan);
+    }
+    100%{
+      background-image: linearGradient(from 360deg,lightblue,deepskyblue,lightcyan);
+    }
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
