@@ -14,12 +14,24 @@
 
 @theme{
   --animate-rotate: rotate 1s infinite linear;
+  --animate-text: transform 3s infinite linear;
   @keyframes rotate{
     0%{
       background-image: linearGradient(from 0deg,lightblue,lightskyblue,lightcyan);
     }
     100%{
       background-image: linearGradient(from 360deg,lightblue,deepskyblue,lightcyan);
+    }
+  }
+  @keyframes transform{
+    0%{
+      transform: rotate('-15deg');
+    }
+    50%{
+      transform: rotate('0deg');
+    }
+    100%{
+      transform: rotate('0deg');
     }
   }
 }

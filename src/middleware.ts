@@ -10,7 +10,7 @@ export async function middleware(request :NextRequest){
         return NextResponse.rewrite(new URL("/welcome",request.url));
     }
     return response;
-    return NextResponse.redirect(new URL("/welcome", request.url));
+    // return NextResponse.redirect(new URL("/welcome", request.url));
 
 }
 
