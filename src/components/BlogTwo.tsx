@@ -1,6 +1,7 @@
 import React from 'react'
 
-function BlogTwo() {
+async function BlogTwo() {
+    await new Promise((resolve) => setTimeout(resolve,5000));
   return (
     <div className='w-full p-5 font-[cursive]'>
       <h1 className='text-2xl font-bold text-cyan-500'>New Home Appliences For Your House</h1>
