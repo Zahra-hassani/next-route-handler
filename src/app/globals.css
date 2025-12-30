@@ -15,6 +15,17 @@
 @theme{
   --animate-rotate: rotate 1s infinite linear;
   --animate-text: transform 3s infinite linear;
+  --animate-move: move 2s 1 linear;
+  @keyframes move{
+    0%{
+      opacity: 0;
+      translate: -50px 0;
+    }
+    100%{
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
   @keyframes rotate{
     0%{
       background-image: linearGradient(from 0deg,lightblue,lightskyblue,lightcyan);

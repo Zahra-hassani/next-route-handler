@@ -1,4 +1,5 @@
 import React from 'react'
+export const dynamicParams = false;
 export async function generateStaticParams() {
     return [
         {id : "1"},
